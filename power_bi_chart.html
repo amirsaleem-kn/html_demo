@@ -11,12 +11,12 @@
             margin: 0;
             padding: 10px;
             font-family: sans-serif;
-            background: #1f1f1f;
+            background: #ebebeb;
         }
 
         .title {
             text-align: center;
-            color: white;
+            color: #1d1d1d;
             font-size: 30px;
             margin-top: 25px;
         }
@@ -25,6 +25,7 @@
             body {
                 padding: 10px 20px;
             }
+
             .title {
                 font-size: 25px;
             }
@@ -51,6 +52,11 @@
             border-radius: 15px;
             overflow: hidden;
             background: white;
+            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+        }
+
+        .card_item:hover {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
         }
 
         .footer {
@@ -58,7 +64,7 @@
             justify-content: space-around;
             margin-top: 20px;
             text-align: center;
-            color: rgb(228, 228, 228);
+            color: #1d1d1d;
         }
 
         .footer h3 {
@@ -75,7 +81,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: #1f1f1f;
+            background: #ebebeb;
             display: flex;
             align-items: center;
         }
@@ -84,10 +90,9 @@
             display: block;
             margin: 0 auto;
         }
-
     </style>
     <script>
-        window.onload = function(){
+        window.onload = function () {
             setTimeout(hideLoader, 3000);
         };
         function hideLoader() {
@@ -98,10 +103,10 @@
 </head>
 
 <body>
-    <div id = "loader">
-        <img src = "https://ui-ex.com/images/transparent-background-loading.gif"/>
+    <div id="loader">
+        <img src="https://ui-ex.com/images/transparent-background-loading.gif" />
     </div>
-    <h1 class = "title">PowerBi Embed Demo</h1>
+    <h1 class="title">PowerBi Embed Demo</h1>
     <div class="cards_view">
         <div class="card_item">
             <iframe width="100%" height="100%"
@@ -122,26 +127,27 @@
             </iframe>
         </div>
         <div class="card_item">
-                <iframe width="100%" height="100%"
-                    src="https://app.powerbi.com/view?r=eyJrIjoiZjU5OTBkYjYtZWI3Ni00M2YwLTkzNTAtODQ0ZjQ2N2EwN2NjIiwidCI6IjAxM2E0NTI0LTlmMGItNDJjZS1hYTlmLTk1MDMxMjQ1MmY4NyJ9"
-                    frameborder="0" allowFullScreen="true">
-                </iframe>
-            </div>
-            <div class="card_item">
-                <iframe width="100%" height="100%"
-                    src="https://app.powerbi.com/view?r=eyJrIjoiZDE2MjQzNjItMjE4YS00YzQwLTg0NDgtMjA4ZGJiNTk5YjgzIiwidCI6IjAxM2E0NTI0LTlmMGItNDJjZS1hYTlmLTk1MDMxMjQ1MmY4NyJ9"
-                    frameborder="0" allowFullScreen="true">
-                </iframe>
-            </div>
-            <div class="card_item">
-                <iframe width="100%" height="100%"
-                    src="https://app.powerbi.com/view?r=eyJrIjoiMDU2MTFhNDEtMzRiNC00MGFkLTlmYzctYzgxOWViNDA2ZTc5IiwidCI6IjAxM2E0NTI0LTlmMGItNDJjZS1hYTlmLTk1MDMxMjQ1MmY4NyJ9"
-                    frameborder="0" allowFullScreen="true">
-                </iframe>
-            </div>
+            <iframe width="100%" height="100%"
+                src="https://app.powerbi.com/view?r=eyJrIjoiZjU5OTBkYjYtZWI3Ni00M2YwLTkzNTAtODQ0ZjQ2N2EwN2NjIiwidCI6IjAxM2E0NTI0LTlmMGItNDJjZS1hYTlmLTk1MDMxMjQ1MmY4NyJ9"
+                frameborder="0" allowFullScreen="true">
+            </iframe>
+        </div>
+        <div class="card_item">
+            <iframe width="100%" height="100%"
+                src="https://app.powerbi.com/view?r=eyJrIjoiZDE2MjQzNjItMjE4YS00YzQwLTg0NDgtMjA4ZGJiNTk5YjgzIiwidCI6IjAxM2E0NTI0LTlmMGItNDJjZS1hYTlmLTk1MDMxMjQ1MmY4NyJ9"
+                frameborder="0" allowFullScreen="true">
+            </iframe>
+        </div>
+        <div class="card_item">
+            <iframe width="100%" height="100%"
+                src="https://app.powerbi.com/view?r=eyJrIjoiMDU2MTFhNDEtMzRiNC00MGFkLTlmYzctYzgxOWViNDA2ZTc5IiwidCI6IjAxM2E0NTI0LTlmMGItNDJjZS1hYTlmLTk1MDMxMjQ1MmY4NyJ9"
+                frameborder="0" allowFullScreen="true">
+            </iframe>
+        </div>
     </div>
-    <div class = "footer">
-        <h3>Made with <span class = "crimson">&#x2764;</span> by <a href = "https://github.com/amirsaleem-kn" target = "_blank">Amir Saleem</a></h3>
+    <div class="footer">
+        <h3>Made with <span class="crimson">&#x2764;</span> by <a href="https://github.com/amirsaleem-kn"
+                target="_blank">Amir Saleem</a></h3>
     </div>
 </body>
 
