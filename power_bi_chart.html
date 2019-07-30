@@ -8,7 +8,15 @@
     <title>Document</title>
     <style>
         body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
             background: #000000cd;
+        }
+
+        a {
+            text-decoration-color: none;
+            color: inherit;
         }
 
         .cards_view {
@@ -29,10 +37,53 @@
             background: white;
         }
 
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            text-align: center;
+            background: black;
+            color: rgb(228, 228, 228);
+        }
+
+        .footer h3 {
+            text-align: center;
+        }
+
+        .crimson {
+            color: crimson;
+        }
+
+        #loader {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: black;
+            display: flex;
+            align-items: center;
+        }
+
+        #loader img {
+            display: block;
+            margin: 0 auto;
+        }
+
     </style>
+    <script>
+        window.onload = function(){
+            setTimeout(hideLoader, 3000);
+        };
+        function hideLoader() {
+            var loader = document.getElementById("loader");
+            loader.style.display = "none";
+        }
+    </script>
 </head>
 
 <body>
+    <div id = "loader">
+        <img src = "https://ui-ex.com/images/transparent-background-loading.gif"/>
+    </div>
     <div class="cards_view">
         <div class="card_item">
             <iframe width="100%" height="100%"
@@ -70,6 +121,9 @@
                     frameborder="0" allowFullScreen="true">
                 </iframe>
             </div>
+    </div>
+    <div class = "footer">
+        <h3>Made with <span class = "crimson">&#x2764;</span> by <a href = "https://github.com/amirsaleem-kn" target = "_blank">Amir Saleem</a></h3>
     </div>
 </body>
 
